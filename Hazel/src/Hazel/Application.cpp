@@ -9,6 +9,7 @@ namespace Hazel{
 
 	Application::Application()
 	{
+		m_Window = std::unique_ptr<Window>(Window::Create());
 	}
 
 	Application::~Application()
@@ -17,20 +18,13 @@ namespace Hazel{
 
 	void Application::Run()
 	{
-		WindowResizeEvent e(1280,720);
 
-		if (e.IsInCategory(EventCategoryApplication))
+
+
+		while (true) //一个无限循环的应用程序
 		{
-			HZ_TRACE(e);
+			m_Window->OnUpdate();
 		}
-		if (e.IsInCategory(EventCategoryInput))
-		{
-			HZ_TRACE(e);
-		}
-		
-
-
-		while (true); //一个无限循环的应用程序
 
 	}
 
