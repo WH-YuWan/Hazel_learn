@@ -2,7 +2,7 @@
 #include "Application.h"
 
 #include "Hazel/Events/ApplicationEvent.h"
-#include "Log.h"
+#include "Hazel/Log.h"
 
 
 namespace Hazel{
