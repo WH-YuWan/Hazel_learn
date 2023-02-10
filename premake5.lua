@@ -43,7 +43,10 @@ project "Hazel"
     links 
     {
         "GLFW",
-        "opengl32.lib"
+        "opengl32.lib",
+        "msvcrtd.lib",
+        "vcruntimed.lib",
+        "ucrtd.lib"
     }
 
     filter "system:windows"
