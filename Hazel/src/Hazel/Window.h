@@ -3,6 +3,7 @@
 #include "hzpch.h"
 
 #include "Hazel/Core.h"
+#include "Hazel/Log.h"
 #include "Hazel/Events/Event.h"
 
 namespace Hazel
