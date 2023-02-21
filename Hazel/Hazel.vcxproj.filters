@@ -7,19 +7,6 @@
     <Filter Include="src\Hazel">
       <UniqueIdentifier>{F0370AB3-5CA2-BE29-A5E0-6FCF118A9C7E}</UniqueIdentifier>
     </Filter>
-<<<<<<< HEAD
-    <Filter Include="Hazel\ImGui">
-      <UniqueIdentifier>{83AD5E9B-EF62-D790-7857-D167E40BCE94}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Hazel\Platform">
-      <UniqueIdentifier>{0D422A0B-F90F-1E11-E2A3-8E37CE10FA75}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Hazel\Platform\OpenGL">
-      <UniqueIdentifier>{A17A8072-0DE7-3B6D-D6DA-D3CA42065ED5}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Hazel\Platform\Windows">
-      <UniqueIdentifier>{47A9AB1A-33A3-D46C-1C10-6B7D08A93AD9}</UniqueIdentifier>
-=======
     <Filter Include="src\Hazel\Events">
       <UniqueIdentifier>{D495B311-C08E-D263-E9C0-B7E8D518B26F}</UniqueIdentifier>
     </Filter>
@@ -55,7 +42,6 @@
     </Filter>
     <Filter Include="vendor\glm\glm\gtx">
       <UniqueIdentifier>{B3A6A76B-9F8A-68C1-08EB-6214F4ED5243}</UniqueIdentifier>
->>>>>>> 112498b (Add glm)
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -92,9 +78,6 @@
     <ClInclude Include="src\Hazel\KeyCodes.h">
       <Filter>src\Hazel</Filter>
     </ClInclude>
-    <ClInclude Include="src\Hazel\ImGui\ImGuiLayer.h">
-      <Filter>Hazel\ImGui</Filter>
-    </ClInclude>
     <ClInclude Include="src\Hazel\Layer.h">
       <Filter>src\Hazel</Filter>
     </ClInclude>
@@ -112,9 +95,6 @@
     </ClInclude>
     <ClInclude Include="src\Hazel\Platform\Windows\WindowsInput.h">
       <Filter>src\Hazel\Platform\Windows</Filter>
-    </ClInclude>
-    <ClInclude Include="src\Hazel\Platform\OpenGL\ImGuiOpenGLRenderer.h">
-      <Filter>Hazel\Platform\OpenGL</Filter>
     </ClInclude>
     <ClInclude Include="src\Hazel\Platform\Windows\WindowsWindow.h">
       <Filter>src\Hazel\Platform\Windows</Filter>
@@ -1381,9 +1361,6 @@
     <ClCompile Include="src\Hazel\ImGui\ImGuiLayer.cpp">
       <Filter>src\Hazel\ImGui</Filter>
     </ClCompile>
-    <ClCompile Include="src\Hazel\ImGui\ImGuiLayer.cpp">
-      <Filter>Hazel\ImGui</Filter>
-    </ClCompile>
     <ClCompile Include="src\Hazel\Layer.cpp">
       <Filter>src\Hazel</Filter>
     </ClCompile>
@@ -1398,9 +1375,6 @@
     </ClCompile>
     <ClCompile Include="src\Hazel\Platform\Windows\WindowsInput.cpp">
       <Filter>src\Hazel\Platform\Windows</Filter>
-    </ClCompile>
-    <ClCompile Include="src\Hazel\Platform\OpenGL\ImGuiOpenGLRenderer.cpp">
-      <Filter>Hazel\Platform\OpenGL</Filter>
     </ClCompile>
     <ClCompile Include="src\Hazel\Platform\Windows\WindowsWindow.cpp">
       <Filter>src\Hazel\Platform\Windows</Filter>
