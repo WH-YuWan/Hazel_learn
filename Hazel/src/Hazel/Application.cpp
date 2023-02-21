@@ -6,6 +6,8 @@
 #include <GLFW/glfw3.h>
 #include <glad/glad.h>
 
+#include "Input.h"
+
 
 namespace Hazel{
 
@@ -15,7 +17,7 @@ namespace Hazel{
 
 	Application::Application()
 	{
-		//HZ_CORE_ASSERT(s_Instance, "Application already exists!");
+		HZ_CORE_ASSERT(!s_Instance, "Application already exists!");
 		s_Instance = this;
 
 		m_Window = std::unique_ptr<Window>(Window::Create());
@@ -64,6 +66,9 @@ namespace Hazel{
 			{
 				layer->OnUpdate();
 			}
+
+			//auto [x, y] = Input::GetMousePosition();
+			//HZ_CORE_TRACE("{0} , {1}", x, y);
 
 			m_Window->OnUpdate();
 		}

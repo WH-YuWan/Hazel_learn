@@ -7,3 +7,4 @@ bin-int/
 /Hazel/Hazel.vcxproj
 /Sandbox/Sandbox.vcxproj
 /.gitignore
+/Sandbox/imgui.ini

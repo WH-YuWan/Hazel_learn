@@ -2,7 +2,7 @@
 #include "WindowsWindow.h"
 
 
-#include "Hazel/Events/ApplicationEvent.h";
+#include "Hazel/Events/ApplicationEvent.h"
 #include "Hazel/Events/KeyEvent.h"
 #include "Hazel/Events/MouseEvent.h"
 
@@ -113,6 +113,16 @@ namespace Hazel {
 			
 			});
 
+		glfwSetCharCallback(m_Window, [](GLFWwindow* window, unsigned int keycode) 
+			{
+			WindowData& data = *(WindowData*)glfwGetWindowUserPointer(window);
+
+			KeyTypedEvent event(keycode);
+			
+			data.EventCallback(event);
+
+			});
+
 		glfwSetCharCallback(m_Window, [](GLFWwindow* window, unsigned int keycode) {
 			WindowData& data = *(WindowData*)glfwGetWindowUserPointer(window);
 
@@ -145,6 +155,8 @@ namespace Hazel {
 				}
 
 			});
+
+
 
 		glfwSetScrollCallback(m_Window, [](GLFWwindow* window, double xoffset, double yoffset) 
 			{

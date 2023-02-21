@@ -7,7 +7,7 @@ extern Hazel::Application* Hazel::CreateApplication();
 	void main(int argc, char** argv)
 	{ 
 		Hazel::Log::Init();
-		HZ_CORE_INFO("Initialized Log!");
+		HZ_CORE_TRACE("Initialized Log!");
 		int a = 5;
 		HZ_INFO("Hello! var = {0}",a);
 
